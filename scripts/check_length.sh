@@ -2,13 +2,15 @@
 
 # Arg 1
 INPUT_FILE=$1
-OUTPUT_FILE="corinna_larsen_len_check.dic"
-
 # Arg 2
-PREFIX=$2
+OUTPUT_FILE=$2
+
+# Arg 3, optional
+PREFIX=$3
 
 MIN_LEN=6
 MAX_LEN=8
+
 touch $OUTPUT_FILE
 
 echo "Original wordlist size: `wc -l $INPUT_FILE`"
